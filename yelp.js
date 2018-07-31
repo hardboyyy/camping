@@ -14,7 +14,6 @@ var campgroundsRoutes = require("./routes/campgrounds"),
     authRoutes        = require("./routes/auth");
  //seedDB();
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://hardboyyy:kuwarhardik12@ds259111.mlab.com:59111/yelpcamp123");
 //PASSPORT CONFIGURATION
 app.use(flash());
 app.use(require("express-session")({
