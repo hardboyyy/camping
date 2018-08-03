@@ -13,7 +13,8 @@ var campgroundsRoutes = require("./routes/campgrounds"),
     commentRoutes     = require("./routes/comments"),
     authRoutes        = require("./routes/auth");
  //seedDB();
-mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost/yelpcamp");
 //PASSPORT CONFIGURATION
 app.use(flash());
 app.use(require("express-session")({
